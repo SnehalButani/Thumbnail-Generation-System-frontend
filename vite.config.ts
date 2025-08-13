@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 import path from "path";
 
 export default defineConfig({
+  preview: {
+    allowedHosts: true,
+    host: '0.0.0.0',
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
